@@ -1,0 +1,34 @@
+{
+  "name": "maphosha-logistics",
+  "version": "1.0.0",
+  "description": "Premium logistics platform for MaphoshaLogistics - Azure-ready full-stack application",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "start": "npm run start --workspace=backend",
+    "setup": "npm install && npm run setup --workspace=backend && npm run setup --workspace=frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NtuliMpendulo/MaphoshaLogistics.git"
+  },
+  "keywords": ["logistics", "transportation", "azure", "react", "nodejs"],
+  "author": "Maphosha PTY LTD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NtuliMpendulo/MaphoshaLogistics/issues"
+  },
+  "homepage": "https://github.com/NtuliMpendulo/MaphoshaLogistics#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

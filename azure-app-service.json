@@ -1,0 +1,47 @@
+{
+  "name": "maphosha-logistics",
+  "description": "Premium logistics platform for MaphoshaLogistics",
+  "runtime": "node|18.0",
+  "startupCommand": "npm run start --workspace=backend",
+  "appSettings": [
+    {
+      "name": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "name": "DATABASE_SERVER",
+      "value": "your-server.database.windows.net"
+    },
+    {
+      "name": "DATABASE_NAME",
+      "value": "maphosha_db"
+    },
+    {
+      "name": "DATABASE_USER",
+      "value": "admin"
+    },
+    {
+      "name": "DATABASE_PASSWORD",
+      "value": "your-password"
+    },
+    {
+      "name": "JWT_SECRET",
+      "value": "your-jwt-secret"
+    },
+    {
+      "name": "FRONTEND_URL",
+      "value": "https://your-domain.com"
+    },
+    {
+      "name": "PORT",
+      "value": "8080"
+    }
+  ],
+  "connectionStrings": [
+    {
+      "name": "DefaultConnection",
+      "value": "Server=tcp:your-server.database.windows.net,1433;Initial Catalog=maphosha_db;Persist Security Info=False;User ID=admin;Password=your-password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+      "type": "SQLAzure"
+    }
+  ]
+}
